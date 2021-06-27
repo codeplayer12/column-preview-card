@@ -1,0 +1,26 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* Base colors */
+:root{
+    /* Primary colors */
+    --primary-bright-orange: hsl(31,77%,52%);
+    --primary-dark-cyan: hsl(184,100%,22%);
+    --primary-very-dark-cyan: hsl(179,100%,13%);
+
+    /* Neutral Colors */
+    --neutral-transparent-white: hsla(0,0%,100%,0.75);
+    --neutral-very-light-gray: hsl(0,0%,95%);
+}
+
+body{
+    font-size: 15px;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width:375px){
+
+}
+@media(min-width:1440px){
+    
+}
