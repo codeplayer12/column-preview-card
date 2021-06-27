@@ -15,12 +15,118 @@
 
 body{
     font-size: 15px;
+    background:var(--neutral-very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--neutral-transparent-white);
+}
+p{
+    margin-top: 0;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.main{
+    display: flex;
+    width:60%;
+    margin:auto;
+    margin-top: 5%;
+}
+img{
+    width:30%;
+}
+.card{
+    height: 350px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: content-box;
 }
 
+/* Card Background color */
+.one{
+    background-color: var(--primary-bright-orange);
+    align-content: space-around;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.two{
+    background-color: var(--primary-dark-cyan);
+}
+.three{
+    background-color: var(--primary-very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Button colors */
+.one .button{
+    color: var(--primary-bright-orange);
+}
+.two .button{
+    color: var(--primary-dark-cyan);
+}
+.three .button{
+    color: var(--primary-very-dark-cyan);
+}
+
+.button{
+    border: none;
+    padding:10px 20px;
+    border-radius: 10rem;
+}
+.button:hover{
+    border: 2px solid var(--neutral-transparent-white);
+    color: var(--neutral-transparent-white);
+    cursor: pointer;
+}
+/* Footer styles */
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+    color:#000;
+    margin-top: 50px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
 /* Media queries for different screen sizes */
-@media (min-width:375px){
-
+@media screen and (max-width:375px){
+    img{
+        margin:auto;
+        width: 20%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .three{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .one{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
 }
-@media(min-width:1440px){
-    
+@media screen and (max-width:882px){
+    img{
+        margin:auto;
+        width: 30%;
+        margin-bottom: 0;
+        margin-top: 5%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .three{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .one{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
 }
